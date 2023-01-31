@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="recordNotespane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1200.0" style="-fx-border-color: #EB9605; -fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="memoria.NotesController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="675.0" prefWidth="137.0" style="-fx-background-color: #14233C;">
+         <children>
+            <ImageView fitHeight="113.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/id-card.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="entrybutton" mnemonicParsing="false" onAction="#entryButtonAction" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: #14233C; -fx-border-color: #EB9605; -fx-border-width: 0px 0px 2px 0px;" text="ENTRIES" textFill="#efdddd">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="PFDinTextCondPro-Regular" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="98.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/increase.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="statButton" mnemonicParsing="false" onAction="#statsonAction" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: #14233C; -fx-border-color: #E9122F; -fx-border-width: 0px 0px 2px 0px;" text="STATS" textFill="#efdddd">
+               <font>
+                  <Font name="PFDinTextCondPro-Regular" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="98.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/goal.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="goalButton" mnemonicParsing="false" onAction="#goalsButtonAction" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: #14233C; -fx-border-color: #FF7127; -fx-border-width: 0px 0px 2px 0px;" text="GOALS" textFill="#efdddd">
+               <font>
+                  <Font name="PFDinTextCondPro-Regular" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="106.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/notepad.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="34.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="calendarButton" mnemonicParsing="false" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: #FF8659; -fx-border-color: #FF8659; -fx-border-width: 0px 0px 2px 0px;" text="NOTES" textFill="#efdddd">
+               <font>
+                  <Font name="PFDinTextCondPro-Regular" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="137.0" prefHeight="100.0" prefWidth="1063.0" style="-fx-background-color: #14233C; -fx-border-color: #EB9605;">
+         <children>
+            <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/user-account-box.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <TextField fx:id="usernameLabel" promptText="username" style="-fx-border-color: #004080; -fx-border-width: 0px 0px 3px 0px;">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logoutAction" prefHeight="32.0" prefWidth="130.0" style="-fx-background-color: #1D7283; -fx-background-radius: 10;" text="Log Out" textFill="#fcfafa">
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="PFDinTextCondPro-Regular" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitbutton" mnemonicParsing="false" onAction="#exitAction" style="-fx-background-color: #EB9605;" text="X" textFill="#fcf9f9">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Label layoutX="200.0" layoutY="168.0" prefHeight="54.0" prefWidth="240.0" style="-fx-background-color: #FCBE29;" text="    Add Your Notes Here!" textAlignment="CENTER" textFill="#fffcfc">
+         <font>
+            <Font name="Sitka Display" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="writenotestextfield" layoutX="200.0" layoutY="256.0" prefHeight="317.0" prefWidth="321.0" promptText="write your notes here" style="-fx-border-color: #FF8659;" />
+      <Button fx:id="addButton" layoutX="311.0" layoutY="599.0" mnemonicParsing="false" onAction="#addButtonAction" prefHeight="30.0" prefWidth="98.0" style="-fx-background-color: #14233C; -fx-background-radius: 10;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="Sitka Display" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="652.0" layoutY="168.0" prefHeight="54.0" prefWidth="233.0" style="-fx-border-color: #FCBE29; -fx-border-width: 0px 0px 3px 0px;" text="   My Notes" textAlignment="CENTER" textFill="#14233c">
+         <font>
+            <Font name="Sitka Display" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="deleteButton" layoutX="821.0" layoutY="599.0" mnemonicParsing="false" onAction="#deletenoteAction" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #14233C; -fx-background-radius: 10;" text="Delete Selected Notes" textFill="#fffafa">
+         <font>
+            <Font name="Sitka Display" size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="mynotestable" layoutX="620.0" layoutY="245.0" minHeight="317.0" minWidth="500.0" prefHeight="317.0" prefWidth="500.0" style="-fx-background-color: #FF8659;">
+         <columns>
+            <TableColumn fx:id="mynotescolumn" prefWidth="499.0" style="-fx-background-color: #FCBE29;" text="Notes" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

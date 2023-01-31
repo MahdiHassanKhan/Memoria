@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="activityPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="memoria.Afsignup2Controller">
+   <children>
+      <VBox prefHeight="675.0" prefWidth="171.0" style="-fx-background-color: #14233C; -fx-border-color: #14233C; -fx-border-width: 0px 5px 0px 0px;" />
+      <Label layoutX="432.0" layoutY="89.0" prefHeight="98.0" prefWidth="337.0" text="      WHAT HAVE YOU&#10;         BEEN UP TO?" textFill="#14233c">
+         <font>
+            <Font name="PFDinTextCondPro-Regular" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="exitButton" layoutX="1071.0" layoutY="27.0" mnemonicParsing="false" onAction="#exitButtonAction" style="-fx-background-color: #EB9605;" text="X" textFill="#fffcfc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="86.0" fitWidth="96.0" layoutX="274.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/computer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="86.0" fitWidth="86.0" layoutX="482.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/family.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="86.0" fitWidth="86.0" layoutX="683.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/friends.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="76.0" layoutX="874.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/love.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="86.0" fitWidth="86.0" layoutX="274.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/reading.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="86.0" fitWidth="86.0" layoutX="473.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/muscle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="86.0" layoutX="690.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/headphones.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="86.0" layoutX="867.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/food-tray.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="dateButton" layoutX="892.0" layoutY="356.0" mnemonicParsing="false" onAction="#dateButton" style="-fx-background-color: transparent; -fx-border-color: #EC5569; -fx-border-radius: 10; -fx-background-radius: 10;" text="DATE">
+         <font>
+            <Font name="Sitka Display Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="friendsButton" layoutX="700.0" layoutY="356.0" mnemonicParsing="false" onAction="#friendsButton" style="-fx-background-color: Transparent; -fx-border-color: #E9122F; -fx-border-radius: 10; -fx-background-radius: 10;" text="FRIENDS">
+         <font>
+            <Font name="Sitka Display Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="familyButton" layoutX="493.0" layoutY="356.0" mnemonicParsing="false" onAction="#familyButton" style="-fx-background-color: transparent; -fx-border-color: #14233C; -fx-border-radius: 10; -fx-background-radius: 10;" text="FAMILY">
+         <font>
+            <Font name="Sitka Display Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="workButton" layoutX="289.0" layoutY="356.0" mnemonicParsing="false" onAction="#workButton" style="-fx-background-color: transparent; -fx-border-color: EB9605; -fx-border-radius: 10; -fx-background-radius: 10;" text="WORK">
+         <font>
+            <Font name="Sitka Display Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="goodMealButton" layoutX="871.0" layoutY="571.0" mnemonicParsing="false" onAction="#goodMealButton" style="-fx-background-color: TRANSPARENT; -fx-border-color: #EB9605; -fx-border-radius: 10; -fx-background-radius: 10;" text="GOOD MEAL">
+         <font>
+            <Font name="Sitka Display Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="musicButton" layoutX="700.0" layoutY="571.0" mnemonicParsing="false" onAction="#musicButton" style="-fx-background-color: transparent; -fx-border-color: #FB636F; -fx-border-radius: 10; -fx-background-radius: 10;" text="MUSIC">
+         <font>
+            <Font name="Sitka Display Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="workoutButton" layoutX="484.0" layoutY="571.0" mnemonicParsing="false" onAction="#workoutButton" style="-fx-background-color: Transparent; -fx-border-color: #E9122F; -fx-border-radius: 10; -fx-background-radius: 10;" text="WORKOUT">
+         <font>
+            <Font name="Sitka Display Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="readingButton" layoutX="281.0" layoutY="571.0" mnemonicParsing="false" onAction="#readingButton" style="-fx-background-color: transparent; -fx-border-color: #FF4F19; -fx-border-radius: 10; -fx-background-radius: 10;" text="READING">
+         <font>
+            <Font name="Sitka Banner Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="140.0" fitWidth="171.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../Project%20Final/Backups/final%20zunayed/final%20zunayed/Memoria/src/memoria/images/m.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="next" layoutX="1004.0" layoutY="621.0" mnemonicParsing="false" onAction="#nextButton" prefHeight="29.0" prefWidth="76.0" style="-fx-background-color: #FF8659; -fx-background-radius: 10;" text="Next" textFill="#fefcfc" />
+   </children>
+</AnchorPane>

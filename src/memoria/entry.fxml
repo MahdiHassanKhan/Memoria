@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="recordEntrypane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1200.0" style="-fx-border-color: #EB9605;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="memoria.EntryController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="675.0" prefWidth="137.0" style="-fx-background-color: #14233C;">
+         <children>
+            <ImageView fitHeight="113.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/id-card.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="entrybutton" mnemonicParsing="false" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: #DF910D; -fx-border-color: #EB9605; -fx-border-width: 0px 0px 2px 0px;" text="ENTRIES" textFill="#efdddd">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="PFDinTextCondPro-Regular" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="98.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/increase.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="statButton" mnemonicParsing="false" onAction="#statsonAction" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: #14233C; -fx-border-color: #E9122F; -fx-border-width: 0px 0px 2px 0px;" text="STATS" textFill="#efdddd">
+               <font>
+                  <Font name="PFDinTextCondPro-Regular" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="98.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/goal.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="goalButton" mnemonicParsing="false" onAction="#goalsButtonAction" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: #14233C; -fx-border-color: #FF7127; -fx-border-width: 0px 0px 2px 0px;" text="GOALS" textFill="#efdddd">
+               <font>
+                  <Font name="PFDinTextCondPro-Regular" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="106.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/notepad.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="34.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="notesButton" mnemonicParsing="false" onAction="#notesButtonAction" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: #14233C; -fx-border-color: #FF8659; -fx-border-width: 0px 0px 2px 0px;" text="NOTES" textFill="#efdddd">
+               <font>
+                  <Font name="PFDinTextCondPro-Regular" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="137.0" prefHeight="100.0" prefWidth="1063.0" style="-fx-background-color: #14233C; -fx-border-color: #EB9605;">
+         <children>
+            <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/user-account-box.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <TextField fx:id="usernameLabel" promptText="username" style="-fx-border-color: #004080; -fx-border-width: 0px 0px 3px 0px;">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="entrylogoutButton" mnemonicParsing="false" onAction="#logoutAction" prefHeight="32.0" prefWidth="130.0" style="-fx-background-color: #1D7283; -fx-background-radius: 10;" text="Log Out" textFill="#fcfafa">
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="PFDinTextCondPro-Regular" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitbutton" mnemonicParsing="false" onAction="#exitAction" style="-fx-background-color: #EB9605;" text="X" textFill="#fcf9f9">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <TableView fx:id="table" layoutX="164.0" layoutY="152.0" prefHeight="467.0" prefWidth="1016.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="190.85719299316406" style="-fx-background-color: #B0FFFF;" text="Date" />
+          <TableColumn fx:id="mood" minWidth="0.0" prefWidth="321.142822265625" style="-fx-background-color: #1D7283;" text="Mood" />
+            <TableColumn fx:id="activity" prefWidth="500.28570556640625" style="-fx-background-color: #1DE8F1;" text="Activity" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
